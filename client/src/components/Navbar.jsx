@@ -1,13 +1,14 @@
 import React from "react";
 import "./css/Navbar.css";
 import {CircleUserRound, LogIn} from "lucide-react";
+import Logo from "../assets/logo.png";
 
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary ps-sm-5 pe-sm-5 ps-5 ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          Jobs Next
+          <img src={Logo} className="logo-img" alt="JobsNext" />JobsNext
         </a>
         <button
           class="navbar-toggler"

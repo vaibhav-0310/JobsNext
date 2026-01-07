@@ -13,3 +13,9 @@
     color: #374151 !important;
     font-weight: 500 !important;
 }
+.logo-img{
+    width: 50px;
+}
+.navbar-brand{
+    font-weight: bolder !important;
+}
