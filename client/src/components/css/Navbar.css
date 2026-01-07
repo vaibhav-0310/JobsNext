@@ -1,21 +1,36 @@
-.navbar{
-    background-color: transparent !important;
-    padding-top: 1rem;
-    font-size: 13px !important;
-    border-bottom: 2px solid #e5e7eb !important ;
+.navbar {
+  background-color: white !important;
+  padding-top: 1rem;
+  font-size: 13px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important ;
 }
-.btn-success{
-    font-size: 13px !important;
-    padding:14px 20px !important;
+.btn-success {
+  font-size: 13px !important;
+  padding: 14px 20px !important;
 }
-.navbar-nav .nav-link{
-    margin-left: 1.5rem !important;
-    color: #374151 !important;
-    font-weight: 500 !important;
+.navbar-nav .nav-link {
+  margin-left: 1.5rem !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
 }
-.logo-img{
-    width: 50px;
+.logo-img {
+  width: 50px;
 }
-.navbar-brand{
-    font-weight: bolder !important;
+.navbar-brand {
+  font-weight: bolder !important;
+  color: #000000 !important;
+}
+.navbar-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-scroll.show {
+  transform: translateY(0);
 }

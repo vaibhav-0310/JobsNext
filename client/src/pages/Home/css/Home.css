@@ -1,0 +1,51 @@
+.home-page {
+  background-image: url("../../../assets/background.png");
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-blend-mode: overlay;
+  height: 110vh;
+  position: relative;
+}
+/* nav */
+.navbar-home {
+  background-color: transparent !important;
+  padding-top: 1rem;
+  font-size: 14px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important ;
+}
+.btn-success {
+  font-size: 13px !important;
+  padding: 14px 20px !important;
+}
+.nav-home .nav-link {
+  margin-left: 1.5rem !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+.logo-img {
+  width: 50px;
+}
+.home-brand {
+  font-weight: bolder !important;
+  color: #ffffff !important;
+}
+/* hero */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.col-hero-home {
+  color: #ffffff !important;
+}
+.col-home-box{
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 10px;
+  padding: 30px 20px;
+  color: #000000 !important;
+}
+.colored-text{
+  color: #0b8260 !important;
+}

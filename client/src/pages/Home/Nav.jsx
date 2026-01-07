@@ -1,24 +1,14 @@
 import React,{useState,useEffect} from "react";
-import "./css/Navbar.css";
+import "./css/Home.css";
 import {CircleUserRound, LogIn} from "lucide-react";
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
 
-function Navbar() {
-   const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-       const threshold = window.innerHeight * 0.8;
-      setShow(window.scrollY >= 80);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+function Nav() {
+   
   return (
-  <nav className={`navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5 navbar-scroll ${show ? "show" : ""}`}>
+  <nav className={`navbar navbar-home navbar-expand-lg bg-body-tertiary ps-5 pe-5`}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand home-brand" href="#">
           <img src={Logo} className="logo-img me-3" alt="JobsNext" />JobsNext
         </a>
         <button
@@ -33,7 +23,7 @@ function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav-home">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
                 Home
@@ -62,7 +52,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="login-btn">
-          <a style={{color:"#000000"}}><LogIn style={{width: "20px", height:"20px", color:"#000000"}} /> Sign In</a>
+          <a style={{color:"#FFFFFF"}}><LogIn style={{width: "20px", height:"20px", color:"#FFFFFF"}} /> Sign In</a>
           <button class="btn btn-success ms-4"><CircleUserRound style={{width: "20px", height:"20px"}} /> Register Today</button>
         </div>
       </div>
@@ -70,4 +60,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;
