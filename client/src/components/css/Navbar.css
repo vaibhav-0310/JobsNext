@@ -1,0 +1,15 @@
+.navbar{
+    background-color: transparent !important;
+    padding-top: 1rem;
+    font-size: 13px !important;
+    border-bottom: 2px solid #e5e7eb !important ;
+}
+.btn-success{
+    font-size: 13px !important;
+    padding:14px 20px !important;
+}
+.navbar-nav .nav-link{
+    margin-left: 1.5rem !important;
+    color: #374151 !important;
+    font-weight: 500 !important;
+}
