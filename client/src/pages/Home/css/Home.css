@@ -49,3 +49,43 @@
 .colored-text{
   color: #0b8260 !important;
 }
+.bg-green {
+    background-color: #0b8260  !important;
+    height: 0.10rem !important;
+    width: 2.5rem !important;
+}
+.lios-vrst {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    position: relative;
+}
+.lios-vrst ul li {
+    flex: 0 0 33.3333%;
+    list-style: none;
+    width: 33.3333%;
+    position: relative;
+}
+.lios-parts h2 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.lios-vrst ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.lios-parts h2 span {
+    margin-left: 5px;
+}
+.text-main {
+    color: #0b8260  !important;
+}
+
+/* company */
+.container-companies {
+    margin-top: 100px !important;
+}

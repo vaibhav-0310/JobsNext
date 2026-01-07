@@ -41,22 +41,22 @@ function Navbar() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Features
+                Browse Jobs
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Pricing
+                List Job
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" >
-                Disabled
+              <a class="nav-link" >
+                Rate My CV
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">
-                Help
+              <a class="nav-link">
+                About Us
               </a>
             </li>
           </ul>

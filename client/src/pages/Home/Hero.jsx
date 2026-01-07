@@ -10,10 +10,34 @@ function Home() {
        </div>
         <div className='container position-relative z-9 p-5'>
             <div className='row justify-content-between align-items-center'>
-                <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 p-5 col-hero-home'>
+                <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 ps-0 pe-5 col-hero-home'>
                     <h6 class="text-light fw-medium d-inline-flex align-items-center mb-3"><span class="bg-green w-10 h-05 me-2"></span>Get Hot &amp; Trending Jobs</h6>
-                    <h1 class="mb-4">Real Jobs, Real People, Real Success</h1>
-                    <p class="fs-5">Getting a new job is never easy. Check what new jobs we have in store for you on Jobs Next AI system.</p>
+                    <h1 class="mb-4" style={{fontSize:"3.5em"}}>Real Jobs, Real People, Real Success</h1>
+                    <p class="fs-5" style={{fontSize:"1.5 rem"}}>Getting a new job is never easy. Check what new jobs we have in store for you on Jobs Next AI system.</p>
+                    <div class="lios-vrst">
+								<ul>
+									<li>
+										<div class="lios-parts">
+											<h2><span class="ctr">20</span><span class="text-main">M</span></h2>
+											<h6>Active Jobs</h6>
+										</div>
+									</li>
+									
+									<li>
+										<div class="lios-parts">
+											<h2><span class="ctr">40</span><span class="text-main">K</span></h2>
+											<h6>Startups</h6>
+										</div>
+									</li>
+									
+									<li>
+										<div class="lios-parts">
+											<h2><span class="ctr">340</span><span class="text-main">K</span></h2>
+											<h6>Talents</h6>
+										</div>
+									</li>
+								</ul>
+							</div>
                 </div>
                 <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12  col-hero-home col-home-box offset-xl-1 offset-lg-1'>
                     <h1>Grow Your Career with <span className='colored-text'>Jobs Next AI</span></h1><br></br>
