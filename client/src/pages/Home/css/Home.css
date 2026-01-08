@@ -89,3 +89,87 @@
 .container-companies {
     margin-top: 100px !important;
 }
+
+/* Jobs */
+
+.featured-text {
+    display: inline-block;
+    color: #009667;
+    background: rgb(0 150 103 / 15%);
+    padding: 3px 15px;
+    font-size: 12px;
+}
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-radius: 10px;
+}
+.job-instructor-thumb img {
+    display: table;
+    margin: 0 auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.job-instructor-thumb {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.card-job:hover {
+    transform: translateY(-10px);
+    transition: box-shadow 0.3s ease-in-out;
+   
+}
+.urgent {
+    display: inline-block;
+    color: #ff8222;
+    background: rgb(255 130 34 / 15%);
+    padding: 3px 15px;
+    font-size: 12px;
+}
+
+a {
+    color: var(--linkcolor);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.job-instructor-content {
+    position: relative;
+    padding: 0.1rem 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    min-height: 80px;
+}
+
+.job-instructor-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.instructor-students {
+    flex: 1;
+}
+.instructor-scount {
+    margin: 0;
+    font-size: 1.1rem;
+}
+.instructor-corses span {
+    display: flex;
+    padding: 4px 14px;
+    font-weight: 500;
+    background: var(--maincolor);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 12px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}

@@ -3,3 +3,30 @@
     padding:0;
     font-family: Jost !important;
 }
+:root, [data-bs-theme=light] {
+	--bodybg:#ffffff;
+	--bodycolor:#333333;
+	--linkcolor:#333333;
+	--paragraphcolor:#0f161e;
+	--primaryfont: 'Jost', sans-serif;
+	--bordercolor:#dee2e6;
+	--graycolor:#f1f1f1;
+	--lightcolor:#f8f8f8;
+	--maincolor:#0b8260;
+	--bghijack:#fff5ee;
+	--secondcolor:#04343a;
+	--headingcolor:#1b2021;
+	--heading-2:#064332;
+	--greencolor:#4caf50;
+	--redcolor:#e91e1e;
+	--navcolor:#30363f;
+	--darkheadercolor:#8e97a4;
+	--headerdark:#30363f;
+	--footercolor:#6e8497;
+	--darkfootercolor:#8e97a4;
+	--footerbg:#30363f;
+	--darkcolor:#262d2f;
+	--overlaycolor:#121615;
+	--tagbg:#f3f6fb;
+	--tagcolor:#6e8497;
+}
