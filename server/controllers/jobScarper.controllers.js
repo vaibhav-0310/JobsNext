@@ -1,4 +1,4 @@
-import {initBrowser, extractJobs} from "../scraper/jobScarper.js";
+import {initBrowser, extractJobs} from "../functions/jobScarper.js";
 
 export const scrapeNaukriJobs = async (req, res) => {
     try {
