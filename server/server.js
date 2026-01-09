@@ -26,6 +26,9 @@ const db=async()=>{
 
 // ---------------- ROUTES ----------------
 import jobScraperRoutes from './routes/jobScarper.routes.js';
+import predictRoutes from './routes/predict.routes.js';
+
+app.use('/api/predict', predictRoutes);
 app.use('/api/jobs', jobScraperRoutes);
 app.get("/", (_, res) => {
   res.send("JobsNext running fine");
