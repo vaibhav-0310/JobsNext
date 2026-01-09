@@ -2,6 +2,8 @@ import multer from "multer";
 import axios from "axios";
 import dotenv from "dotenv";
 import tryMultiplePdfParsers from "../functions/agent.js";
+import { setJobTitle } from "../store/jobStore.js";
+
 
 dotenv.config();
 
@@ -124,7 +126,7 @@ const pdfUpload = async (req, res) => {
 };
 
 const getPrediction = async (req, res) => {
-  const { query } = req.body;
+  const query  = "Provide the best matching job title.";
 
   // Validate input
   if (!query || query.trim().length === 0) {
@@ -228,11 +230,12 @@ Response Rules:
     }
 
     console.log(`Successfully generated answer of ${answer.length} characters`);
+    setJobTitle(answer);
     res.json({
       answer: answer.trim(),
       contextLength: context.length,
       queryLength: query.length,
-    });
+    }).status(200);
   } catch (error) {
     console.error(
       "Error querying AI service:",

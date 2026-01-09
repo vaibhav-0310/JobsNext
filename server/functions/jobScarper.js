@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-
+import { getJobTitle } from "../store/jobStore.js";
 // ---------------- INIT BROWSER ----------------
 let browser;
 let page;
@@ -7,23 +7,33 @@ let page;
 async function initBrowser() {
   if (browser) return;
 
+  const jobTitle = getJobTitle();
+
+  if (!jobTitle) {
+    throw new Error("No job title available. Run LLM prediction first.");
+  }
+
+  const searchQuery = jobTitle.toLowerCase().replace(/\s+/g, "-");
+  const url = `https://www.naukri.com/${searchQuery}-jobs`;
+
   browser = await puppeteer.launch({
-    executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe",
+    executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe",
     headless: false,
     slowMo: 40,
     args: ["--start-maximized"],
-    defaultViewport: null
+    defaultViewport: null,
   });
 
   page = await browser.newPage();
 
-  await page.goto("https://www.naukri.com/software-engineer-jobs", {
+  await page.goto(url, {
     waitUntil: "networkidle2",
-    timeout: 90000
+    timeout: 90000,
   });
 
-  console.log("Naukri page loaded");
+  console.log(`🔍 Searching jobs for: ${jobTitle}`);
 }
+
 
 
 // ---------------- SCROLL ----------------
