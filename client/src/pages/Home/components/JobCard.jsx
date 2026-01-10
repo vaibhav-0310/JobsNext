@@ -17,10 +17,10 @@ function JobCard({type,link,img,title,skills,salary,openings,urgent}) {
             </a>
           </div>
           <div class="job-instructor-content">
-            <h4 class="instructor-title">
+            <h5 class="instructor-title mt-3">
               <a href={link}>{title}</a>
-            </h4>
-            <div class="instructor-skills text-muted">
+            </h5>
+            <div class="instructor-skills text-muted" style={{fontSize:"0.8rem"}}>
               {skills}
             </div>
           </div>

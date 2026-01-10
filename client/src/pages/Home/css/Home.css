@@ -116,8 +116,9 @@
     margin: 0 auto;
     border-radius: 8px;
 }
-.card-job:hover {
-    transform: translateY(-10px);
+.border:hover {
+    transform: scaleY(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
    
 }
@@ -172,4 +173,13 @@ a {
     height: 30px;
     align-items: center;
     justify-content: center;
+}
+
+/* newsletter */
+.newsletter-container{
+    background-color: var(--maincolor);
+    background-image: url("../../../assets/footer-bg-dark.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

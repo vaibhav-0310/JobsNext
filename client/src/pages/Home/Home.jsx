@@ -4,6 +4,7 @@ import './css/Home.css';
 import Nav from './Nav.jsx';
 import Company from './Company.jsx';
 import Jobs from './Jobs.jsx';
+import NewsLetter from './NewsLetter.jsx';
 
 function Home() {
     return ( 
@@ -13,6 +14,7 @@ function Home() {
         <Hero/>
         <Company/>
         <Jobs/>
+        <NewsLetter/>
         </div>
         </>
      );
