@@ -2,7 +2,8 @@
   background-image: url("../../../assets/background.png");
   background-color: rgba(0, 0, 0, 0.5) !important;
   background-blend-mode: overlay;
-  height: 110vh;
+  min-height: 110vh;
+  max-height: 110vh;
   position: relative;
 }
 /* nav */

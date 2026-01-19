@@ -12,10 +12,12 @@ function Home() {
         <div className="home-page">
         <Nav/>
         <Hero/>
+        
+        </div>
         <Company/>
         <Jobs/>
         <NewsLetter/>
-        </div>
+      
         </>
      );
 }
