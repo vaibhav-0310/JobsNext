@@ -29,8 +29,8 @@ import predictRoutes from './routes/predict.routes.js';
 
 app.use('/api/predict', predictRoutes);
 app.use('/api/jobs', jobScraperRoutes);
-app.get("/", (_, res) => {
-  res.send("JobsNext running fine");
+app.get("/api", (_, res) => {
+  res.status(200).json({ message: "JobsNext running fine" });
 });
 
 // ---------------- START SERVER ----------------

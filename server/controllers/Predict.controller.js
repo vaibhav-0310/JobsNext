@@ -28,14 +28,14 @@ const OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions";
 let pdf = "";
 
 const pdfUpload = async (req, res) => {
-  const uploadSingle = upload.single("pdf");
+  const uploadSingle = upload.single("resume");
 
   uploadSingle(req, res, async (err) => {
     if (err) {
       console.error("Multer error:", err);
       if (err.code === "UNEXPECTED_FIELD") {
         return res.status(400).json({
-          error: 'Unexpected field error. Expected field name: "pdf"',
+          error: 'Unexpected field error. Expected field name: "resume"',
         });
       }
       if (err.code === "LIMIT_FILE_SIZE") {
