@@ -2,9 +2,13 @@ import React, { useEffect,useState } from "react";
 import "./css/Home.css";
 import banner from "../../assets/banner.svg";
 import axios from "axios";
+import { createContext } from "react";
+
+ export const ResumeContext = createContext();
 
 function Home() {
   const [resumeFile, setResumeFile] = useState(null);
+  const [resumeData, setResumeData] = useState(null);
   const handleFileChange = (event) => {
     setResumeFile(event.target.files[0]);
   };
@@ -22,11 +26,13 @@ function Home() {
       console.log(response);
       let keyword=await axios.post("/api/predict/predict",response.data.preview);
       console.log(keyword);
+      setResumeData(keyword.data);
     } catch (error) {
       console.error("Error uploading resume:", error);
     }
   };
   return (
+     <ResumeContext.Provider value={resumeData}>
     <>
       <div className="position-absolute bottom-0 start-0 end-0">
         <img src={banner} alt="banner" className="img-fluid w-100" />
@@ -133,6 +139,7 @@ function Home() {
         </div>
       </div>
     </>
+    </ResumeContext.Provider>
   );
 }
 
